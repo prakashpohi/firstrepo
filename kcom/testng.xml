@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="KCOM Application Automation Test Suite">
+	<listeners>
+
+		<listener class-name="kcom.qa.util.TestNG_Listener"></listener>
+		<listener class-name="Retryfailedcase.MyTransformer"></listener>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"></listener>
+
+	</listeners>
+
+
+	<test name="KCOM.Mykeysight Test Cases">
+		<classes>
+			<class name="kcom.qa.testcases.HomepageTest"></class>
+			<class name="kcom.qa.testcases.MykeysightpageTest"></class>
+			<class name="kcom.qa.testcases.FindApartSearchPageTest"></class>
+			<class name="kcom.qa.testcases.FindApartSearchResultPageTest"></class>
+			<class name="kcom.qa.testcases.Login_errorpageTest"></class>
+			<class name="kcom.qa.testcases.MydownloadsTest"></class>
+			<class name="kcom.qa.testcases.MyKPortalTest"></class>
+			<class name="kcom.qa.testcases.MyprofilepageTest"></class>
+			<class name="kcom.CIA.testcases.Event_sectionTest"></class>
+			<class name="kcom.CIA.testcases.HowtoBuyTest"></class>
+			<class name="kcom.CIA.testcases.Oscilloscopes_LandingpageTest"></class>
+			<class name="kcom.CIA.testcases.TechSupportTest"></class>
+
+
+		</classes>
+	</test>
+</suite>

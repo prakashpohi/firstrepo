@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [KCOM Application Automation Test Suite]">
+  <listeners>
+    <listener class-name="kcom.qa.util.TestNG_Listener"/>
+    <listener class-name="Retryfailedcase.MyTransformer"/>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="KCOM.Mykeysight Test Cases(failed)">
+    <classes>
+      <class name="kcom.qa.testcases.FindApartSearchResultPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="validatevewdropdownTest"/>
+          <include name="ADDtoCARTTEst"/>
+        </methods>
+      </class> <!-- kcom.qa.testcases.FindApartSearchResultPageTest -->
+      <class name="kcom.CIA.testcases.HowtoBuyTest">
+        <methods>
+          <include name="setup"/>
+          <include name="HowToBuyCheck"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- kcom.CIA.testcases.HowtoBuyTest -->
+      <class name="kcom.qa.testcases.MydownloadsTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="mydownloadhistoryTest"/>
+        </methods>
+      </class> <!-- kcom.qa.testcases.MydownloadsTest -->
+    </classes>
+  </test> <!-- KCOM.Mykeysight Test Cases(failed) -->
+</suite> <!-- Failed suite [KCOM Application Automation Test Suite] -->
